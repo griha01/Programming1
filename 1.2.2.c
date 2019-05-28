@@ -12,7 +12,6 @@ double fx(double x, double d, double c) // вычисляемая функция
 double decision(func fx, double x1, double x2, double c, double d)
 {
   double v;
-  int i;
   while (fabs(x1 - x2) > eps) // пока не достигнута точность eps(0.0000001)
   {
     v = (x1 * fx(x2, c, d) - x2 * fx(x1, c, d)) / (fx(x2, c, d) - fx(x1, c, d));
